@@ -18,28 +18,29 @@ body {
 #index_page {
   position: relative;
   overflow: hidden;
-  .brown_circle {
-    width: 80vw;
-    height: 80vw;
-    border-radius: 50%;
-    margin: 0 auto;
-    background-color: #402e23;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 8;
-    color: white;
-    font-size: 40px;
-    h2 {
-      padding-bottom: 50px;
-    }
-  }
   .banner_wrap {
     position: relative;
     overflow: hidden;
+    margin-bottom: 100px;
+    .brown_circle {
+      width: 80vw;
+      height: 80vw;
+      border-radius: 50%;
+      margin: 0 auto;
+      background-color: #402e23;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      color: white;
+      font-size: 40px;
+      h2 {
+        padding-bottom: 50px;
+      }
+    }
     .banner_img {
       .banner_text {
         z-index: 2;
@@ -169,6 +170,7 @@ body {
     }
   }
   .fetaures_wrap {
+    padding: 80px 0;
     margin-top: 100px;
     background-color: #402e23;
     .features {
@@ -221,6 +223,23 @@ body {
     }
   }
   .testimonials_wrap {
+    position: relative;
     @extend .section_spacing;
+    .section_content {
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .land {
+      position: absolute;
+    }
+    .land1 {
+      left: 0;
+      top: 0;
+    }
+    .land2 {
+      right: 0;
+      top: 0;
+    }
   }
 }
