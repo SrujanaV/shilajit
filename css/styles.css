@@ -1,0 +1,162 @@
+@font-face {
+  font-family: Circular-Medium;
+  src: url(../fonts/CircularStd-Medium.otf); }
+body {
+  margin: 0; }
+
+.text_center {
+  text-align: center; }
+
+.section_spacing, #index_page .about_wrap, #index_page .testimonials_wrap {
+  padding: 100px 0; }
+
+#index_page {
+  position: relative;
+  overflow: hidden; }
+  #index_page .brown_circle {
+    width: 80vw;
+    height: 80vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #402e23;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 8;
+    color: white;
+    font-size: 40px; }
+    #index_page .brown_circle h2 {
+      padding-bottom: 50px; }
+  #index_page .banner_wrap {
+    position: relative;
+    overflow: hidden; }
+    #index_page .banner_wrap .banner_img .banner_text {
+      z-index: 2; }
+    #index_page .banner_wrap .banner_img .banner_text2 {
+      z-index: 7; }
+    #index_page .banner_wrap .banner_img .banner_text,
+    #index_page .banner_wrap .banner_img .banner_text2 {
+      position: absolute;
+      width: 100%;
+      top: 30px;
+      text-align: center;
+      font-family: Circular-Medium;
+      font-size: 30px; }
+    #index_page .banner_wrap .banner_img .mountains {
+      z-index: 6; }
+    #index_page .banner_wrap .banner_img .white_clouds {
+      z-index: 7; }
+    #index_page .banner_wrap .banner_img .birds {
+      z-index: 5; }
+    #index_page .banner_wrap .banner_img .hidden_elem {
+      position: absolute;
+      left: 0;
+      top: 0; }
+    #index_page .banner_wrap .banner_img .black_left {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 7; }
+    #index_page .banner_wrap .banner_img .black_right {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 7; }
+    #index_page .banner_wrap .banner_img .scene {
+      z-index: 8; }
+    #index_page .banner_wrap .banner_img .shilajit_box {
+      z-index: 9;
+      position: absolute;
+      left: 50%; }
+  #index_page .trusted_ingredients .images_content_wrap.gold .images_wrap img:first-child {
+    opacity: 0;
+    left: -100%; }
+  #index_page .trusted_ingredients .images_content_wrap.gold .images_wrap img:last-child {
+    transform: translateX(-100%);
+    opacity: 1; }
+  #index_page .trusted_ingredients .images_content_wrap.gold .shilajit_button .first_button {
+    opacity: 0; }
+  #index_page .trusted_ingredients .images_content_wrap.gold .shilajit_button .second_button {
+    transform: translateX(0%);
+    opacity: 1; }
+  #index_page .trusted_ingredients .images_content_wrap .images_wrap {
+    position: relative; }
+    #index_page .trusted_ingredients .images_content_wrap .images_wrap img:first-child {
+      transition: ease all 500ms; }
+    #index_page .trusted_ingredients .images_content_wrap .images_wrap img:last-child {
+      transition: ease all 500ms;
+      position: absolute;
+      opacity: 0; }
+  #index_page .trusted_ingredients .images_content_wrap .shilajit_button {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 25px;
+    border: solid 2px #f7e57e;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    transition: ease all 500ms;
+    cursor: pointer;
+    overflow: hidden; }
+    #index_page .trusted_ingredients .images_content_wrap .shilajit_button .button_text {
+      margin-right: 20px; }
+    #index_page .trusted_ingredients .images_content_wrap .shilajit_button .first_button {
+      transition: ease all 500ms; }
+    #index_page .trusted_ingredients .images_content_wrap .shilajit_button .second_button {
+      position: absolute;
+      top: 10px;
+      transition: ease all 500ms;
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      transform: translateX(100%);
+      opacity: 0; }
+    #index_page .trusted_ingredients .images_content_wrap .shilajit_button:hover {
+      background-color: #f7e57e;
+      color: black; }
+      #index_page .trusted_ingredients .images_content_wrap .shilajit_button:hover .arrow {
+        filter: brightness(0); }
+  #index_page .fetaures_wrap {
+    margin-top: 100px;
+    background-color: #402e23; }
+    #index_page .fetaures_wrap .features {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      #index_page .fetaures_wrap .features .feature_card {
+        display: flex;
+        align-items: center; }
+        #index_page .fetaures_wrap .features .feature_card .fetaure_value {
+          width: 93px;
+          height: 93px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          border: solid 1px white;
+          color: white; }
+        #index_page .fetaures_wrap .features .feature_card .fetaure_text {
+          color: white;
+          padding-left: 10px; }
+  #index_page .video_wrap {
+    position: relative;
+    cursor: pointer; }
+    #index_page .video_wrap:hover .play {
+      transform: translate(-50%, -50%) scale(0.9); }
+    #index_page .video_wrap .play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: ease all 300ms; }
+  #index_page .about_wrap .about_text {
+    width: 70%;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=styles.css.map */

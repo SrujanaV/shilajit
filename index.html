@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main id="index_page">
+        <!--  insert body content  -->
+        <div class="brown_circle">
+            <h2>India's 1st Clinically<br> Researched Shilajit</h2>
+        </div>
+        <section class="banner_wrap" id="banner_wrap">
+            <div class="banner_img">
+                <img src="images/banner_img.jpg" alt="Banner Image" class="banner_img_img">
+                <img src="images/banner_img2.png" alt="Banner 2 Image" class="banner_img2 hidden_elem">
+                <img src="images/birds.png" alt="Birds" class="birds hidden_elem">
+                <img src="images/clouds.png" alt="clouds" class="clouds hidden_elem">
+                <img src="images/mountain2.png" alt="mountains" class="mountains hidden_elem">
+                <h2 class="banner_text">Sourced from 18,000 Feet of the Annapurna Range of the Himalayas</h2>
+                <img src="images/white_clouds2.png" alt="white clouds" class="white_clouds hidden_elem">
+                <h2 class="banner_text2">Known as the 'destroyer of weakness,' Shilajit is a natural and classical
+                    Ayurvedic remedy for boosting energy, increasing endurance, and elevating vitality.</h2>
+                <img src="images/black_mountain_left.png" alt="black left mountain" class="black_left">
+                <img src="images/black_mountain_right.png" alt="black right mountain" class="black_right">
+                <img src="images/scene.png" alt="scene" class="scene hidden_elem">
+                <img src="images/shilajit_box.png" alt="Shilajit Box" class="shilajit_box">
+            </div>
+        </section>
+
+        <section class="trusted_ingredients">
+            <h2 class="text_center">Trusted <span>Ingredients</span><br> for Proven Results!</h2>
+            <div class="images_content_wrap text_center">
+                <div class="images_wrap text_center">
+                    <img src="images/shilajit.png" alt="Shilajit Image">
+                    <img src="images/shilajit_gold.png" alt="Shilajit Image">
+                </div>
+                <button class="shilajit_button">
+                    <span class="first_button">
+                        <span class="button_text">Shilajit Gold</span>
+                        <span><img src="images/next.png" alt="Arrow" class="arrow"></span>
+                    </span>
+                    <span class="second_button">
+                        <span><img src="images/prev.png" alt="Arrow" class="arrow"></span>
+                        <span class="button_text">Shilajit</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <section class="fetaures_wrap">
+            <div class="section_spacing">
+                <div class="features">
+                    <div class="feature_card">
+                        <p class="fetaure_value">85</p>
+                        <p class="fetaure_text">Trace Minerals</p>
+                    </div>
+                    <div class="feature_card">
+                        <p class="fetaure_value">75%</p>
+                        <p class="fetaure_text">Fulvic Acid</p>
+                    </div>
+                    <div class="feature_card">
+                        <p class="fetaure_value"><img src="images/lab_tested.png" alt="Lab Tested"></p>
+                        <p class="fetaure_text">LAB tested for purity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video_wrap">
+            <img src="images/video_img.png" alt="video image">
+            <img src="images/play.png" alt="play button" class="play">
+        </section>
+
+        <section class="about_wrap text_center">
+            <p class="about_text">Shilajit begins its journey to you high in the Annapurna range of the Himalayas,
+                seeping from mountain rocks over centuries. Meticulous manufacturing refines the raw resin through
+                filtration, extraction, and blending - each step ensures this timeless natural substance is harnessed in
+                its purest, most potent form.</p>
+        </section>
+
+        <section class="testimonials_wrap">
+
+        </section>
+
+        <!--  end body content -->
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/scrollmagic/TweenMax.min.js"></script>
+    <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+    <script src="js/scrollmagic/animation.gsap.min.js"></script>
+    <script src="js/scrollmagic/debug.addIndicators.min.js"></script>
+    <script src="js/scrollmagic/ScrollToPlugin.min.js"></script>
+    <script>
+        $(".shilajit_button").click(function () {
+            $(this).parent().toggleClass("gold");
+        });
+
+        let winW = $(window).width();
+        let winH = $(window).height();
+
+        // init controller
+        var controller = new ScrollMagic.Controller();
+
+        //create timeline
+        var bannerTween = new TimelineMax();
+        bannerTween.fromTo(
+            ".banner_wrap .banner_img2",
+            1,
+            {
+                y: "100%",
+                opacity: 0,
+            },
+            {
+                y: "0%",
+                opacity: 1,
+            },
+            "first"
+        ).fromTo(".banner_wrap .banner_img_img", 1,
+            {
+                scale: 3,
+            },
+            {
+                scale: 2.5,
+            },
+            "first"
+        ).fromTo(".banner_wrap .birds", 1,
+            {
+                scale: 2,
+            },
+            {
+                scale: 1.3,
+            },
+            "first"
+        ).fromTo(".banner_wrap .clouds", 1,
+            {
+                scale: 2,
+                opacity: 0,
+            },
+            {
+                scale: 1,
+                opacity: 1,
+            },
+            "first"
+        ).to(".banner_wrap .banner_img_img", 1,
+            {
+                scale: 1.9,
+            },
+            "second"
+        ).to(".banner_wrap .banner_img2", 1,
+            {
+                y: "100%",
+                opacity: 0,
+            },
+            "second"
+        ).to(".banner_wrap .birds", 1,
+            {
+                scale: 1.2,
+            },
+            "second"
+        ).fromTo(".banner_wrap .banner_text", 1,
+            {
+                opacity: 0,
+            },
+            {
+                opacity: 1,
+            },
+            "second"
+        ).to(".banner_wrap .banner_img_img", 1,
+            {
+                scale: 1.5,
+            },
+            "third"
+        ).to(".banner_wrap .birds", 1,
+            {
+                scale: .9,
+            },
+            "third"
+        ).fromTo(".banner_wrap .mountains", 1,
+
+            {
+                y: "100%",
+                opacity: 0,
+            },
+            {
+                y: "30%",
+                opacity: 1,
+            },
+            "third"
+        ).fromTo(".banner_wrap .white_clouds", 1,
+            {
+                y: "100%",
+                opacity: 0,
+            },
+            {
+                y: "50%",
+                opacity: 1,
+            },
+            "fourth"
+        ).to(".banner_wrap .birds", 1,
+            {
+                scale: .7,
+            },
+            "fourth"
+        ).to(".banner_wrap .banner_text", 1,
+            {
+                top: "100%",
+                opacity: 0,
+            },
+            "fourth"
+        ).fromTo(".banner_wrap .banner_text2", 1,
+            {
+                opacity: 0,
+            },
+            {
+                opacity: 1,
+            },
+            "fifth"
+        ).to(".banner_wrap .mountains", 1,
+            {
+                y: "0%",
+            },
+            "fifth"
+        ).to(".banner_wrap .white_clouds", 1,
+            {
+                y: "0%",
+            },
+            "fifth"
+        ).fromTo(".banner_wrap .black_left", 1,
+            {
+                x: "-100%",
+                y: "100%",
+            },
+            {
+                x: "0%",
+                y: "0%",
+            },
+            "fifth"
+        ).fromTo(".banner_wrap .black_right", 1,
+            {
+                x: "100%",
+                y: "100%",
+                opacity: 0,
+            },
+            {
+                x: "0%",
+                y: "0%",
+                opacity: 1,
+            },
+            "fifth"
+        ).to(".banner_wrap .banner_text2", 1,
+            {
+                top: "100%",
+                opacity: 0,
+            },
+            "test"
+        ).fromTo(".banner_wrap .scene", 1,
+            {
+                y: "100%",
+                scale: 1.3,
+                opacity: 0,
+            },
+            {
+                y: "40%",
+                scale: 2,
+                opacity: 1,
+            },
+            "test"
+        ).to(".banner_wrap .banner_img_img", 1,
+            {
+                scale: 1,
+            },
+            "test"
+        ).fromTo(".banner_wrap .shilajit_box", 1,
+            {
+                x: "-50%",
+                y: "100%",
+            },
+            {
+                x: "-50%",
+                y: "-50%",
+            },
+            "test"
+        ).to(".banner_wrap .scene", 1,
+            {
+                y: "20%",
+            },
+            "sixth"
+        ).to(".banner_wrap .scene", 1,
+            {
+                scale: 1,
+                y: "0%",
+            },
+            "seventh"
+        ).to(".banner_wrap .shilajit_box", 1,
+            {
+                x: "-50%",
+                y: "-100%",
+            },
+            "seventh"
+        ).fromTo(".brown_circle", 1,
+            {
+                y: "-100%",
+            },
+            {
+                y: "50%",
+            },
+            "eight"
+        );
+
+        // create a scene
+        new ScrollMagic.Scene({
+            duration: winW, // the scene should last for a scroll distance of 100px
+            offset: 0, // start this scene after scrolling for 0px
+            addIndicators: ""
+        })
+            .setTween(bannerTween)
+            .setPin('#banner_wrap') // pins the element for the the scene's duration
+            .addTo(controller); // assign the scene to the controller
+    </script>
+</body>
+
+</html>
