@@ -17,7 +17,7 @@
         <!--  insert body content  -->
         <section class="banner_wrap" id="banner_wrap">
             <div class="brown_circle">
-                <h2>India's 1st Clinically<br> Researched Shilajit</h2>
+                <h2>India's 1st <span>Clinically<br> Researched</span> Shilajit</h2>
             </div>
             <div class="banner_img">
                 <img src="images/banner_img.jpg" alt="Banner Image" class="img-responsive banner_img_img">
@@ -25,9 +25,12 @@
                 <img src="images/birds.png" alt="Birds" class="img-responsive birds hidden_elem">
                 <img src="images/clouds.png" alt="clouds" class="img-responsive clouds hidden_elem">
                 <img src="images/mountain2.png" alt="mountains" class="img-responsive mountains hidden_elem">
-                <h2 class="banner_text">Sourced from 18,000 Feet of the Annapurna Range of the Himalayas</h2>
+                <h2 class="banner_text">Sourced from <span>18,000 Feet</span> of the <span>Annapurna Range</span> of the
+                    Himalayas
+                </h2>
                 <img src="images/white_clouds2.png" alt="white clouds" class="img-responsive white_clouds hidden_elem">
-                <h2 class="banner_text2">Known as the 'destroyer of weakness,' Shilajit is a natural and classical
+                <h2 class="banner_text2">Known as the <span>'destroyer of weakness,</span>' Shilajit is a natural and
+                    classical
                     Ayurvedic remedy for boosting energy, increasing endurance, and elevating vitality.</h2>
                 <img src="images/black_mountain_left.png" alt="black left mountain" class="img-responsive black_left">
                 <img src="images/black_mountain_right.png" alt="black right mountain"
@@ -118,10 +121,10 @@
                 <h2>What sets our <span>Pure Himalayan Shilajit</span> apart?</h2>
                 <div class="himalayan_wrap">
                     <div class="himalayan_image">
-                        <img src="images/himalayan-shilajit1.svg" alt="himalayan-shilajit1">
+                        <img class="img-responsive" src="images/himalayan-shilajit1.svg" alt="himalayan-shilajit1">
                     </div>
                     <div class="himalayan_image">
-                        <img src="images/himalayan-shilajit2.svg" alt="himalayan-shilajit2">
+                        <img class="img-responsive" src="images/himalayan-shilajit2.svg" alt="himalayan-shilajit2">
                     </div>
                 </div>
             </div>
@@ -516,7 +519,7 @@
                 y: "-100%",
             },
             {
-                y: "-77%",
+                y: "-75%",
             },
             "eight"
         );
@@ -538,41 +541,22 @@
             1,
             {
                 y: "100%",
-                opacity: 0,
             },
             {
                 y: "0%",
-                opacity: 1,
             },
             "first"
+        ).fromTo(
+            ".about_shilajit .vitality_wrap",
+            1,
+            {
+                y: "100%",
+            },
+            {
+                y: "0%",
+            },
+            "second"
         )
-            // .to(".about_shilajit .shilajits_impact_wrap",
-            //     1,
-            //     {
-            //         opacity: 0,
-            //     },
-            //     "first"
-            // )
-            .fromTo(
-                ".about_shilajit .vitality_wrap",
-                1,
-                {
-                    y: "100%",
-                    opacity: 0,
-                },
-                {
-                    y: "0%",
-                    opacity: 1,
-                },
-                "second"
-            )
-        // .to(".about_shilajit .pure_himalayan",
-        //     1,
-        //     {
-        //         opacity: 0,
-        //     },
-        //     "second"
-        // )
 
         // create a scene
         new ScrollMagic.Scene({

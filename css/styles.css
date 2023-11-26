@@ -2,6 +2,12 @@
   font-family: Circular-Medium;
   src: url(../fonts/CircularStd-Medium.otf); }
 @font-face {
+  font-family: Circular-Light;
+  src: url(../fonts/CircularStd-Light.otf); }
+@font-face {
+  font-family: Circular-Book;
+  src: url(../fonts/CircularStd-Book.otf); }
+@font-face {
   font-family: Circular-Bold;
   src: url(../fonts/CircularStd-Bold.otf); }
 @font-face {
@@ -46,22 +52,35 @@ body {
       left: 50%;
       transform: translateX(-50%);
       z-index: 10;
-      color: white;
-      font-size: 40px; }
+      color: white; }
       #index_page .banner_wrap .brown_circle h2 {
-        padding-bottom: 30px; }
+        font-size: 60px;
+        padding-bottom: 30px;
+        font-family: Circular-Medium; }
+        #index_page .banner_wrap .brown_circle h2 span {
+          font-family: BigCaslon_Italic; }
     #index_page .banner_wrap .banner_img .banner_text {
+      font-size: 50px;
+      line-height: 1;
       z-index: 2; }
     #index_page .banner_wrap .banner_img .banner_text2 {
-      z-index: 7; }
+      z-index: 7;
+      font-size: 30px;
+      line-height: 1.2; }
     #index_page .banner_wrap .banner_img .banner_text,
     #index_page .banner_wrap .banner_img .banner_text2 {
       position: absolute;
-      width: 100%;
-      top: 30px;
+      width: 50%;
+      top: 50px;
       text-align: center;
-      font-family: Circular-Medium;
-      font-size: 30px; }
+      color: white;
+      font-family: Circular-Light;
+      margin: 0 auto;
+      left: 50%;
+      transform: translateX(-50%); }
+      #index_page .banner_wrap .banner_img .banner_text span,
+      #index_page .banner_wrap .banner_img .banner_text2 span {
+        font-family: Circular-Bold; }
     #index_page .banner_wrap .banner_img .mountains {
       z-index: 6; }
     #index_page .banner_wrap .banner_img .white_clouds {
@@ -257,11 +276,12 @@ body {
       border-top-left-radius: 100px;
       border-top-right-radius: 100px; }
       #index_page .about_shilajit .pure_himalayan .himalayan_wrap {
-        margin-top: 50px;
         display: flex;
         align-items: center;
         justify-content: space-between; }
         #index_page .about_shilajit .pure_himalayan .himalayan_wrap .himalayan_image {
+          width: 40%;
+          margin: 0 auto;
           border-right: solid 2px black;
           padding: 0 20px; }
           #index_page .about_shilajit .pure_himalayan .himalayan_wrap .himalayan_image:last-child {
