@@ -1,6 +1,12 @@
 @font-face {
   font-family: Circular-Medium;
   src: url(../fonts/CircularStd-Medium.otf); }
+@font-face {
+  font-family: Circular-Bold;
+  src: url(../fonts/CircularStd-Bold.otf); }
+@font-face {
+  font-family: BigCaslon_Italic;
+  src: url(../fonts/BigCaslonFB-Italic.ttf); }
 body {
   margin: 0; }
 
@@ -14,6 +20,10 @@ body {
 
 .section_spacing, #index_page .about_wrap, #index_page .testimonials_section {
   padding: 100px 0; }
+
+.italic {
+  font-family: BigCaslon_Italic;
+  font-size: 50px; }
 
 #index_page {
   position: relative;
@@ -79,6 +89,9 @@ body {
       position: absolute;
       left: 50%;
       bottom: 0; }
+  #index_page .trusted_ingredients h2 {
+    font-family: Circular-Bold;
+    font-size: 45px; }
   #index_page .trusted_ingredients .images_content_wrap.gold .images_wrap img:first-child {
     opacity: 0; }
   #index_page .trusted_ingredients .images_content_wrap.gold .images_wrap img:last-child {
@@ -150,11 +163,15 @@ body {
           align-items: center;
           justify-content: center;
           border-radius: 50%;
-          border: solid 1px white;
-          color: white; }
+          border: solid 2px white;
+          color: white;
+          font-size: 35px;
+          font-family: Circular-Bold; }
         #index_page .fetaures_wrap .features .feature_card .fetaure_text {
           color: white;
-          padding-left: 10px; }
+          padding-left: 10px;
+          font-size: 30px;
+          font-family: Circular-Bold; }
   #index_page .video_wrap {
     position: relative;
     max-height: 100vh;
@@ -174,14 +191,20 @@ body {
       transition: ease all 300ms; }
   #index_page .about_wrap .about_text {
     width: 70%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: Circular-Medium; }
   #index_page .about_shilajit {
     overflow: hidden;
     min-height: 100vh; }
     #index_page .about_shilajit h2 {
       text-align: center;
       padding: 30px 0;
-      margin: 0; }
+      margin: 0;
+      font-size: 50px;
+      font-family: Circular-Medium; }
+      #index_page .about_shilajit h2 span {
+        font-family: BigCaslon_Italic; }
     #index_page .about_shilajit .shilajits_impact_wrap {
       min-height: 100vh;
       background-color: #402e23;
@@ -206,6 +229,9 @@ body {
           background-color: white;
           margin: 0 auto;
           z-index: 1; }
+        #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey .week_wrap h3 {
+          font-size: 25px;
+          font-family: Circular-Bold; }
         #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey .week_wrap .week_circle {
           position: relative;
           z-index: 2;
@@ -217,6 +243,9 @@ body {
           align-items: center;
           justify-content: center;
           background-color: #402e23; }
+        #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey .week_wrap p {
+          font-size: 16px;
+          font-family: Circular-Medium; }
     #index_page .about_shilajit .pure_himalayan {
       max-height: 100vh;
       overflow: hidden;
@@ -259,14 +288,18 @@ body {
             color: white;
             padding: 10px 0;
             text-align: center;
-            margin: 0; }
+            margin: 0;
+            font-size: 20px;
+            font-family: Circular-Bold; }
   #index_page .testimonials_section {
     position: relative;
     padding-top: 100px; }
     #index_page .testimonials_section .section_content {
       width: 50%;
       text-align: center;
-      margin: 0 auto; }
+      margin: 0 auto;
+      font-size: 25px;
+      font-family: Circular-Medium; }
     #index_page .testimonials_section .land {
       position: absolute; }
     #index_page .testimonials_section .land1 {
@@ -299,6 +332,12 @@ body {
             transition: ease all 300ms; }
             #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content .checked {
               color: orange; }
+            #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content .test_cont {
+              font-size: 20px;
+              font-family: Circular-Medium; }
+            #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content .name {
+              font-size: 16px;
+              font-family: Circular-Medium; }
             #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content:hover {
               background-color: transparent;
               color: white; }
