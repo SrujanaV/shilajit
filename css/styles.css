@@ -26,10 +26,12 @@ body {
 
 .section_spacing, #index_page .about_wrap, #index_page .testimonials_section {
   padding: 100px 0; }
+  @media only screen and (max-width: 767px) {
+    .section_spacing, #index_page .about_wrap, #index_page .testimonials_section {
+      padding: 50px 0; } }
 
 .italic {
-  font-family: BigCaslon_Italic;
-  font-size: 50px; }
+  font-family: BigCaslon_Italic; }
 
 #index_page {
   position: relative;
@@ -57,16 +59,27 @@ body {
         font-size: 60px;
         padding-bottom: 30px;
         font-family: Circular-Medium; }
+        @media only screen and (max-width: 767px) {
+          #index_page .banner_wrap .brown_circle h2 {
+            font-size: 40px; } }
         #index_page .banner_wrap .brown_circle h2 span {
           font-family: BigCaslon_Italic; }
+    #index_page .banner_wrap .banner_img .banner_img_img {
+      width: 100%; }
     #index_page .banner_wrap .banner_img .banner_text {
       font-size: 50px;
       line-height: 1;
       z-index: 2; }
+      @media only screen and (max-width: 767px) {
+        #index_page .banner_wrap .banner_img .banner_text {
+          font-size: 35px; } }
     #index_page .banner_wrap .banner_img .banner_text2 {
       z-index: 7;
       font-size: 30px;
       line-height: 1.2; }
+      @media only screen and (max-width: 767px) {
+        #index_page .banner_wrap .banner_img .banner_text2 {
+          font-size: 20px; } }
     #index_page .banner_wrap .banner_img .banner_text,
     #index_page .banner_wrap .banner_img .banner_text2 {
       position: absolute;
@@ -88,6 +101,7 @@ body {
     #index_page .banner_wrap .banner_img .birds {
       z-index: 5; }
     #index_page .banner_wrap .banner_img .hidden_elem {
+      width: 100%;
       position: absolute;
       left: 0;
       bottom: 0; }
@@ -111,6 +125,9 @@ body {
   #index_page .trusted_ingredients h2 {
     font-family: Circular-Bold;
     font-size: 45px; }
+    @media only screen and (max-width: 767px) {
+      #index_page .trusted_ingredients h2 {
+        font-size: 30px; } }
   #index_page .trusted_ingredients .images_content_wrap.gold .images_wrap img:first-child {
     opacity: 0; }
   #index_page .trusted_ingredients .images_content_wrap.gold .images_wrap img:last-child {
@@ -144,6 +161,9 @@ body {
     transition: ease all 300ms;
     cursor: pointer;
     overflow: hidden; }
+    @media only screen and (max-width: 767px) {
+      #index_page .trusted_ingredients .images_content_wrap .shilajit_button {
+        font-size: 16px; } }
     #index_page .trusted_ingredients .images_content_wrap .shilajit_button .button_text {
       margin-right: 20px; }
     #index_page .trusted_ingredients .images_content_wrap .shilajit_button .first_button {
@@ -166,15 +186,25 @@ body {
     padding: 80px 0;
     margin-top: 100px;
     background-color: #402e23; }
+    @media only screen and (max-width: 767px) {
+      #index_page .fetaures_wrap {
+        margin-top: 50px;
+        padding: 40px 0; } }
     #index_page .fetaures_wrap .features {
       width: 80%;
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between; }
+      @media only screen and (max-width: 767px) {
+        #index_page .fetaures_wrap .features {
+          flex-direction: column; } }
       #index_page .fetaures_wrap .features .feature_card {
         display: flex;
         align-items: center; }
+        @media only screen and (max-width: 767px) {
+          #index_page .fetaures_wrap .features .feature_card {
+            width: 100%; } }
         #index_page .fetaures_wrap .features .feature_card .fetaure_value {
           width: 93px;
           height: 93px;
@@ -186,11 +216,18 @@ body {
           color: white;
           font-size: 35px;
           font-family: Circular-Bold; }
+          @media only screen and (max-width: 767px) {
+            #index_page .fetaures_wrap .features .feature_card .fetaure_value {
+              font-size: 24px; } }
         #index_page .fetaures_wrap .features .feature_card .fetaure_text {
           color: white;
           padding-left: 10px;
           font-size: 30px;
           font-family: Circular-Bold; }
+          @media only screen and (max-width: 767px) {
+            #index_page .fetaures_wrap .features .feature_card .fetaure_text {
+              font-size: 20px;
+              padding-left: 20px; } }
   #index_page .video_wrap {
     position: relative;
     max-height: 100vh;
@@ -213,6 +250,10 @@ body {
     margin: 0 auto;
     font-size: 25px;
     font-family: Circular-Medium; }
+    @media only screen and (max-width: 767px) {
+      #index_page .about_wrap .about_text {
+        font-size: 18px;
+        width: 90%; } }
   #index_page .about_shilajit {
     overflow: hidden;
     min-height: 100vh; }
@@ -222,6 +263,9 @@ body {
       margin: 0;
       font-size: 50px;
       font-family: Circular-Medium; }
+      @media only screen and (max-width: 767px) {
+        #index_page .about_shilajit h2 {
+          font-size: 35px; } }
       #index_page .about_shilajit h2 span {
         font-family: BigCaslon_Italic; }
     #index_page .about_shilajit .shilajits_impact_wrap {
@@ -251,6 +295,9 @@ body {
         #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey .week_wrap h3 {
           font-size: 25px;
           font-family: Circular-Bold; }
+          @media only screen and (max-width: 767px) {
+            #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey .week_wrap h3 {
+              font-size: 18px; } }
         #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey .week_wrap .week_circle {
           position: relative;
           z-index: 2;
@@ -265,11 +312,15 @@ body {
         #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey .week_wrap p {
           font-size: 16px;
           font-family: Circular-Medium; }
+          @media only screen and (max-width: 767px) {
+            #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey .week_wrap p {
+              font-size: 12px; } }
     #index_page .about_shilajit .pure_himalayan {
       max-height: 100vh;
       overflow: hidden;
       position: absolute;
       top: 0;
+      width: 100%;
       z-index: 2;
       background-color: #b9a787;
       padding: 30px;
@@ -289,6 +340,7 @@ body {
     #index_page .about_shilajit .vitality_wrap {
       min-height: 100vh;
       position: absolute;
+      width: 100%;
       top: 0;
       z-index: 3;
       background-color: #402e23;
@@ -311,17 +363,34 @@ body {
             margin: 0;
             font-size: 20px;
             font-family: Circular-Bold; }
+            @media only screen and (max-width: 767px) {
+              #index_page .about_shilajit .vitality_wrap .well_being_wrap .well_being .wellbeing_content {
+                font-size: 16px; } }
+          #index_page .about_shilajit .vitality_wrap .well_being_wrap .well_being .wellbeing_image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
   #index_page .testimonials_section {
     position: relative;
     padding-top: 100px; }
+    @media only screen and (max-width: 767px) {
+      #index_page .testimonials_section {
+        padding-top: 50px; } }
     #index_page .testimonials_section .section_content {
       width: 50%;
       text-align: center;
       margin: 0 auto;
       font-size: 25px;
       font-family: Circular-Medium; }
+      @media only screen and (max-width: 767px) {
+        #index_page .testimonials_section .section_content {
+          font-size: 18px;
+          width: 90%; } }
     #index_page .testimonials_section .land {
       position: absolute; }
+      @media only screen and (max-width: 767px) {
+        #index_page .testimonials_section .land {
+          display: none; } }
     #index_page .testimonials_section .land1 {
       left: 0;
       top: 0; }
@@ -330,6 +399,9 @@ body {
       top: 0; }
     #index_page .testimonials_section .testimonials_wrap {
       margin-top: 100px; }
+      @media only screen and (max-width: 767px) {
+        #index_page .testimonials_section .testimonials_wrap {
+          margin-top: 50px; } }
       #index_page .testimonials_section .testimonials_wrap .testimonial_padding {
         padding: 0 10px; }
         #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials {
@@ -338,9 +410,6 @@ body {
             width: 100%;
             height: 100%;
             object-fit: cover; }
-          @media only screen and (max-width: 767px) {
-            #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials {
-              background-color: transparent; } }
           #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content {
             background-color: #d9d9d9;
             padding: 30px;
@@ -349,15 +418,26 @@ body {
             right: 0;
             bottom: 0;
             left: 0;
-            transition: ease all 300ms; }
+            transition: ease all 300ms;
+            padding-right: 50px; }
+            @media only screen and (max-width: 767px) {
+              #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content {
+                background-color: transparent;
+                color: white; } }
             #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content .checked {
               color: orange; }
             #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content .test_cont {
               font-size: 20px;
               font-family: Circular-Medium; }
+              @media only screen and (max-width: 767px) {
+                #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content .test_cont {
+                  font-size: 16px; } }
             #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content .name {
               font-size: 16px;
               font-family: Circular-Medium; }
+              @media only screen and (max-width: 767px) {
+                #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content .name {
+                  font-size: 12px; } }
             #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content:hover {
               background-color: transparent;
               color: white; }

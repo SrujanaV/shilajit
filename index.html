@@ -60,7 +60,7 @@
             </div>
         </section>
 
-        <section class="fetaures_wrap">
+        <section class="fetaures_wrap" id="fetaures_wrap">
             <div class="features">
                 <div class="feature_card">
                     <p class="fetaure_value"><span class="count">85</span></p>
@@ -77,7 +77,7 @@
             </div>
         </section>
 
-        <section class="video_wrap">
+        <section class="video_wrap" id="video_wrap">
             <!-- <img src="images/video_img.png" alt="video image"> -->
             <video src="https://cdn.shopify.com/videos/c/o/v/07f013fc551b435abf059b78d19ae4c6.mp4" autoplay
                 muted></video>
@@ -134,25 +134,25 @@
                     <div class="well_being">
                         <p class="wellbeing_content">Builds<br> Stamina</p>
                         <div class="wellbeing_image">
-                            <img src="images/vitality1.jpg" alt="Vitality 1">
+                            <img class="img-responsive" src="images/vitality1.jpg" alt="Vitality 1">
                         </div>
                     </div>
                     <div class="well_being">
                         <p class="wellbeing_content">Improved Performance<br> & Vigor</p>
                         <div class="wellbeing_image">
-                            <img src="images/vitality2.jpg" alt="Vitality 2">
+                            <img class="img-responsive" src="images/vitality2.jpg" alt="Vitality 2">
                         </div>
                     </div>
                     <div class="well_being">
                         <p class="wellbeing_content">Better<br> Muscle Mass</p>
                         <div class="wellbeing_image">
-                            <img src="images/vitality3.jpg" alt="Vitality 3">
+                            <img class="img-responsive" src="images/vitality3.jpg" alt="Vitality 3">
                         </div>
                     </div>
                     <div class="well_being">
                         <p class="wellbeing_content">High Energy<br> Levels</p>
                         <div class="wellbeing_image">
-                            <img src="images/vitality4.jpg" alt="Vitality 4">
+                            <img class="img-responsive" src="images/vitality4.jpg" alt="Vitality 4">
                         </div>
                     </div>
                 </div>
@@ -278,17 +278,36 @@
             $(this).parent().toggleClass("gold");
         });
 
+        // this will check if element is in viewport
 
-        $('.count').each(function () {
-            $(this).prop('Counter', 0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 4000,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
-            });
+        function checkVisible(elm, eval) {
+            eval = eval || "object visible";
+            var viewportHeight = $(window).height(), // Viewport Height
+                scrolltop = $(window).scrollTop(), // Scroll Top
+                y = $(elm).offset().top,
+                elementHeight = $(elm).height();
+
+            if (eval == "object visible") return y < viewportHeight + scrolltop && y > scrolltop - elementHeight;
+            if (eval == "above") return y < viewportHeight + scrolltop;
+        }
+
+        $(window).on("scroll", function () {
+            if (checkVisible($("#video_wrap"))) {
+                $('.count').each(function () {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+                $(window).off("scroll");
+            } else {
+                // do nothing
+            }
         });
 
         $(document).ready(function () {
@@ -303,6 +322,7 @@
                         breakpoint: 767,
                         settings: {
                             slidesToShow: 1,
+                            centerPadding: '50px',
                         }
                     },
                     // You can unslick at a given breakpoint now by adding:
