@@ -4,10 +4,15 @@
 body {
   margin: 0; }
 
-.text_center {
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.text_center, #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey {
   text-align: center; }
 
-.section_spacing, #index_page .about_wrap, #index_page .testimonials_wrap {
+.section_spacing, #index_page .about_wrap, #index_page .testimonials_section {
   padding: 100px 0; }
 
 #index_page {
@@ -16,6 +21,7 @@ body {
   #index_page .banner_wrap {
     position: relative;
     overflow: hidden;
+    max-height: 100vh;
     margin-bottom: 100px; }
     #index_page .banner_wrap .brown_circle {
       width: 80vw;
@@ -32,8 +38,6 @@ body {
       z-index: 10;
       color: white;
       font-size: 40px; }
-      #index_page .banner_wrap .brown_circle h2 {
-        padding-bottom: 50px; }
     #index_page .banner_wrap .banner_img .banner_text {
       z-index: 2; }
     #index_page .banner_wrap .banner_img .banner_text2 {
@@ -55,7 +59,7 @@ body {
     #index_page .banner_wrap .banner_img .hidden_elem {
       position: absolute;
       left: 0;
-      top: 0; }
+      bottom: 0; }
     #index_page .banner_wrap .banner_img .black_left {
       position: absolute;
       left: 0;
@@ -71,7 +75,8 @@ body {
     #index_page .banner_wrap .banner_img .shilajit_box {
       z-index: 9;
       position: absolute;
-      left: 50%; }
+      left: 50%;
+      bottom: 0; }
   #index_page .trusted_ingredients .images_content_wrap.gold .images_wrap img:first-child {
     opacity: 0;
     left: -100%; }
@@ -160,19 +165,132 @@ body {
   #index_page .about_wrap .about_text {
     width: 70%;
     margin: 0 auto; }
-  #index_page .testimonials_wrap {
-    position: relative; }
-    #index_page .testimonials_wrap .section_content {
+  #index_page .about_shilajit {
+    overflow: hidden;
+    min-height: 100vh; }
+    #index_page .about_shilajit h2 {
+      text-align: center;
+      padding: 30px 0;
+      margin: 0; }
+    #index_page .about_shilajit .shilajits_impact_wrap {
+      min-height: 100vh;
+      background-color: #402e23;
+      padding: 30px;
+      color: white;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px; }
+      #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey {
+        position: relative;
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          height: 2px;
+          width: 90%;
+          transform: translateY(-50%);
+          background-color: white;
+          margin: 0 auto;
+          z-index: 1; }
+        #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey .week_wrap .week_circle {
+          position: relative;
+          z-index: 2;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          border: solid 2px white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #402e23; }
+    #index_page .about_shilajit .pure_himalayan {
+      max-height: 100vh;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      background-color: #b9a787;
+      padding: 30px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px; }
+      #index_page .about_shilajit .pure_himalayan .himalayan_wrap {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        #index_page .about_shilajit .pure_himalayan .himalayan_wrap .himalayan_image {
+          border-right: solid 2px black;
+          padding: 0 20px; }
+          #index_page .about_shilajit .pure_himalayan .himalayan_wrap .himalayan_image:last-child {
+            border-right: 0; }
+    #index_page .about_shilajit .vitality_wrap {
+      min-height: 100vh;
+      position: absolute;
+      top: 0;
+      z-index: 3;
+      background-color: #402e23;
+      color: white;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px; }
+      #index_page .about_shilajit .vitality_wrap .well_being_wrap {
+        display: flex;
+        flex-wrap: wrap; }
+        #index_page .about_shilajit .vitality_wrap .well_being_wrap .well_being {
+          width: 25%; }
+          #index_page .about_shilajit .vitality_wrap .well_being_wrap .well_being:nth-child(even) .wellbeing_content {
+            background-color: #242424; }
+          #index_page .about_shilajit .vitality_wrap .well_being_wrap .well_being:nth-child(odd) .wellbeing_content {
+            background-color: #3e3e3e; }
+          #index_page .about_shilajit .vitality_wrap .well_being_wrap .well_being .wellbeing_content {
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin: 0; }
+  #index_page .testimonials_section {
+    position: relative;
+    padding-top: 100px; }
+    #index_page .testimonials_section .section_content {
       width: 50%;
       text-align: center;
       margin: 0 auto; }
-    #index_page .testimonials_wrap .land {
+    #index_page .testimonials_section .land {
       position: absolute; }
-    #index_page .testimonials_wrap .land1 {
+    #index_page .testimonials_section .land1 {
       left: 0;
       top: 0; }
-    #index_page .testimonials_wrap .land2 {
+    #index_page .testimonials_section .land2 {
       right: 0;
       top: 0; }
+    #index_page .testimonials_section .testimonials_wrap {
+      margin-top: 100px; }
+      #index_page .testimonials_section .testimonials_wrap .testimonial_padding {
+        padding: 0 10px; }
+        #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials {
+          position: relative; }
+          #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+          @media only screen and (max-width: 767px) {
+            #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials {
+              background-color: transparent; } }
+          #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content {
+            background-color: #d9d9d9;
+            padding: 30px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transition: ease all 300ms; }
+            #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content .checked {
+              color: orange; }
+            #index_page .testimonials_section .testimonials_wrap .testimonial_padding .testimonials .testimonial_content:hover {
+              background-color: transparent;
+              color: white; }
 
 /*# sourceMappingURL=styles.css.map */
