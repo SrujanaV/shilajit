@@ -7,11 +7,11 @@ body {
   margin: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+// img {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
 
 .text_center {
   text-align: center;
@@ -44,6 +44,9 @@ img {
       z-index: 10;
       color: white;
       font-size: 40px;
+      h2 {
+        padding-bottom: 30px;
+      }
     }
     .banner_img {
       .banner_text {

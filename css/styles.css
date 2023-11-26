@@ -4,11 +4,6 @@
 body {
   margin: 0; }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
 .text_center, #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey {
   text-align: center; }
 
@@ -38,6 +33,8 @@ img {
       z-index: 10;
       color: white;
       font-size: 40px; }
+      #index_page .banner_wrap .brown_circle h2 {
+        padding-bottom: 30px; }
     #index_page .banner_wrap .banner_img .banner_text {
       z-index: 2; }
     #index_page .banner_wrap .banner_img .banner_text2 {
