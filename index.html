@@ -20,19 +20,20 @@
                 <h2>India's 1st Clinically<br> Researched Shilajit</h2>
             </div>
             <div class="banner_img">
-                <img src="images/banner_img.jpg" alt="Banner Image" class="banner_img_img">
-                <img src="images/banner_img2.png" alt="Banner 2 Image" class="banner_img2 hidden_elem">
-                <img src="images/birds.png" alt="Birds" class="birds hidden_elem">
-                <img src="images/clouds.png" alt="clouds" class="clouds hidden_elem">
-                <img src="images/mountain2.png" alt="mountains" class="mountains hidden_elem">
+                <img src="images/banner_img.jpg" alt="Banner Image" class="img-responsive banner_img_img">
+                <img src="images/banner_img2.png" alt="Banner 2 Image" class="img-responsive banner_img2 hidden_elem">
+                <img src="images/birds.png" alt="Birds" class="img-responsive birds hidden_elem">
+                <img src="images/clouds.png" alt="clouds" class="img-responsive clouds hidden_elem">
+                <img src="images/mountain2.png" alt="mountains" class="img-responsive mountains hidden_elem">
                 <h2 class="banner_text">Sourced from 18,000 Feet of the Annapurna Range of the Himalayas</h2>
-                <img src="images/white_clouds2.png" alt="white clouds" class="white_clouds hidden_elem">
+                <img src="images/white_clouds2.png" alt="white clouds" class="img-responsive white_clouds hidden_elem">
                 <h2 class="banner_text2">Known as the 'destroyer of weakness,' Shilajit is a natural and classical
                     Ayurvedic remedy for boosting energy, increasing endurance, and elevating vitality.</h2>
-                <img src="images/black_mountain_left.png" alt="black left mountain" class="black_left">
-                <img src="images/black_mountain_right.png" alt="black right mountain" class="black_right">
-                <img src="images/scene.png" alt="scene" class="scene hidden_elem">
-                <img src="images/shilajit_box.png" alt="Shilajit Box" class="shilajit_box">
+                <img src="images/black_mountain_left.png" alt="black left mountain" class="img-responsive black_left">
+                <img src="images/black_mountain_right.png" alt="black right mountain"
+                    class="img-responsive black_right">
+                <img src="images/scene.png" alt="scene" class="img-responsive scene hidden_elem">
+                <img src="images/shilajit_box.png" alt="Shilajit Box" class="img-responsive shilajit_box">
             </div>
         </section>
 
@@ -40,8 +41,8 @@
             <h2 class="text_center">Trusted <span>Ingredients</span><br> for Proven Results!</h2>
             <div class="images_content_wrap text_center">
                 <div class="images_wrap text_center">
-                    <img src="images/shilajit.png" alt="Shilajit Image">
-                    <img src="images/shilajit_gold.png" alt="Shilajit Image">
+                    <img src="images/shilajit.png" class="img-responsive" alt="Shilajit Image">
+                    <img src="images/shilajit_gold.png" class="img-responsive" alt="Shilajit Image">
                 </div>
                 <button class="shilajit_button">
                     <span class="first_button">
@@ -520,7 +521,6 @@
         new ScrollMagic.Scene({
             duration: winW, // the scene should last for a scroll distance of 100px
             offset: 0, // start this scene after scrolling for 0px
-            addIndicators: ""
         })
             .setTween(bannerTween)
             .setPin('#banner_wrap') // pins the element for the the scene's duration
@@ -576,7 +576,6 @@
             duration: winH * 0.5,
             offset: winH * 0.5, // start this scene after scrolling for 0px
         })
-            .addIndicators()
             .setTween(shilajitTween)
             .setPin(".about_shilajit")
             .addTo(controller); // assign the scene to the controller

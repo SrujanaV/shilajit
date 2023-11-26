@@ -4,6 +4,11 @@
 body {
   margin: 0; }
 
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
 .text_center, #index_page .about_shilajit .shilajits_impact_wrap .wellness_journey {
   text-align: center; }
 
@@ -75,10 +80,9 @@ body {
       left: 50%;
       bottom: 0; }
   #index_page .trusted_ingredients .images_content_wrap.gold .images_wrap img:first-child {
-    opacity: 0;
-    left: -100%; }
+    opacity: 0; }
   #index_page .trusted_ingredients .images_content_wrap.gold .images_wrap img:last-child {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
     opacity: 1; }
   #index_page .trusted_ingredients .images_content_wrap.gold .shilajit_button .first_button {
     opacity: 0; }
@@ -87,12 +91,15 @@ body {
     opacity: 1; }
   #index_page .trusted_ingredients .images_content_wrap .images_wrap {
     position: relative; }
-    #index_page .trusted_ingredients .images_content_wrap .images_wrap img:first-child {
-      transition: ease all 500ms; }
-    #index_page .trusted_ingredients .images_content_wrap .images_wrap img:last-child {
-      transition: ease all 500ms;
-      position: absolute;
-      opacity: 0; }
+    #index_page .trusted_ingredients .images_content_wrap .images_wrap img {
+      margin: 0 auto; }
+      #index_page .trusted_ingredients .images_content_wrap .images_wrap img:last-child {
+        left: 50%;
+        transform: translateX(100%);
+        transition: ease all 500ms;
+        position: absolute;
+        top: 0;
+        opacity: 0; }
   #index_page .trusted_ingredients .images_content_wrap .shilajit_button {
     position: relative;
     margin-top: 20px;
@@ -102,17 +109,17 @@ body {
     font-size: 20px;
     padding: 10px 20px;
     color: white;
-    transition: ease all 500ms;
+    transition: ease all 300ms;
     cursor: pointer;
     overflow: hidden; }
     #index_page .trusted_ingredients .images_content_wrap .shilajit_button .button_text {
       margin-right: 20px; }
     #index_page .trusted_ingredients .images_content_wrap .shilajit_button .first_button {
-      transition: ease all 500ms; }
+      transition: ease all 300ms; }
     #index_page .trusted_ingredients .images_content_wrap .shilajit_button .second_button {
       position: absolute;
       top: 10px;
-      transition: ease all 500ms;
+      transition: ease all 300ms;
       display: flex;
       justify-content: space-between;
       width: 80%;
@@ -150,7 +157,13 @@ body {
           padding-left: 10px; }
   #index_page .video_wrap {
     position: relative;
+    max-height: 100vh;
+    overflow: hidden;
     cursor: pointer; }
+    #index_page .video_wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
     #index_page .video_wrap:hover .play {
       transform: translate(-50%, -50%) scale(0.9); }
     #index_page .video_wrap .play {
