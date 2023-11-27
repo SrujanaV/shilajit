@@ -20,6 +20,10 @@
                 <h2>India's 1st <span>Clinically<br> Researched</span> Shilajit</h2>
             </div>
             <div class="banner_img">
+                <!-- <picture>
+                    <source media="(min-width:767px)" srcset="img_pink_flowers.jpg">
+                    <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+                </picture> -->
                 <img src="images/banner_img.jpg" alt="Banner Image" class="img-responsive banner_img_img">
                 <img src="images/banner_img2.png" alt="Banner 2 Image" class="img-responsive banner_img2 hidden_elem">
                 <img src="images/birds.png" alt="Birds" class="img-responsive birds hidden_elem">
@@ -79,9 +83,8 @@
 
         <section class="video_wrap" id="video_wrap">
             <!-- <img src="images/video_img.png" alt="video image"> -->
-            <video src="https://cdn.shopify.com/videos/c/o/v/07f013fc551b435abf059b78d19ae4c6.mp4" autoplay
-                muted></video>
-            <img src="images/play.png" alt="play button" class="play">
+            <video src="images/shilajit_video.mp4" id="movie"></video>
+            <img src="images/play.png" alt="play button" class="play" id="playMovie">
         </section>
 
         <section class="about_wrap text_center">
@@ -121,10 +124,18 @@
                 <h2>What sets our <span>Pure Himalayan Shilajit</span> apart?</h2>
                 <div class="himalayan_wrap">
                     <div class="himalayan_image">
-                        <img class="img-responsive" src="images/himalayan-shilajit1.svg" alt="himalayan-shilajit1">
+                        <picture>
+                            <source media="(min-width:767px)" srcset="images/himalayan-shilajit1.svg">
+                            <img src="images/himalayan-shilajit1-mobile.svg" alt="himalayan-shilajit1"
+                                class="img-responsive">
+                        </picture>
                     </div>
                     <div class="himalayan_image">
-                        <img class="img-responsive" src="images/himalayan-shilajit2.svg" alt="himalayan-shilajit2">
+                        <picture>
+                            <source media="(min-width:767px)" srcset="images/himalayan-shilajit2.svg">
+                            <img src="images/himalayan-shilajit2-mobile.svg" alt="himalayan-shilajit2"
+                                class="img-responsive">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -134,25 +145,37 @@
                     <div class="well_being">
                         <p class="wellbeing_content">Builds<br> Stamina</p>
                         <div class="wellbeing_image">
-                            <img class="img-responsive" src="images/vitality1.jpg" alt="Vitality 1">
+                            <picture>
+                                <source media="(min-width:767px)" srcset="images/vitality1.jpg">
+                                <img src="images/vitality1-mobile.jpg" alt="vitality1" class="img-responsive">
+                            </picture>
                         </div>
                     </div>
                     <div class="well_being">
                         <p class="wellbeing_content">Improved Performance<br> & Vigor</p>
                         <div class="wellbeing_image">
-                            <img class="img-responsive" src="images/vitality2.jpg" alt="Vitality 2">
+                            <picture>
+                                <source media="(min-width:767px)" srcset="images/vitality2.jpg">
+                                <img src="images/vitality2-mobile.jpg" alt="vitality2" class="img-responsive">
+                            </picture>
                         </div>
                     </div>
                     <div class="well_being">
                         <p class="wellbeing_content">Better<br> Muscle Mass</p>
                         <div class="wellbeing_image">
-                            <img class="img-responsive" src="images/vitality3.jpg" alt="Vitality 3">
+                            <picture>
+                                <source media="(min-width:767px)" srcset="images/vitality3.jpg">
+                                <img src="images/vitality3-mobile.jpg" alt="vitality3" class="img-responsive">
+                            </picture>
                         </div>
                     </div>
                     <div class="well_being">
                         <p class="wellbeing_content">High Energy<br> Levels</p>
                         <div class="wellbeing_image">
-                            <img class="img-responsive" src="images/vitality4.jpg" alt="Vitality 4">
+                            <picture>
+                                <source media="(min-width:767px)" srcset="images/vitality4.jpg">
+                                <img src="images/vitality4-mobile.jpg" alt="vitality4" class="img-responsive">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -276,6 +299,10 @@
     <script>
         $(".shilajit_button").click(function () {
             $(this).parent().toggleClass("gold");
+        });
+
+        $('#video_wrap').click(function () {
+            $('#movie').trigger('play');
         });
 
         // this will check if element is in viewport
@@ -546,7 +573,7 @@
 
         // create a scene
         new ScrollMagic.Scene({
-            duration: winW, // the scene should last for a scroll distance of 100px
+            duration: winW * 2, // the scene should last for a scroll distance of 100px
             offset: 0, // start this scene after scrolling for 0px
         })
             .setTween(bannerTween)
