@@ -73,7 +73,8 @@
         </section>
 
         <section class="trusted_ingredients">
-            <h2 class="text_center">Trusted <span class="italic">Ingredients</span><br> for Proven Results!</h2>
+            <h2 class="text_center">Trusted <span class="italic">Ingredients</span><br> for Proven
+                Results!</h2>
             <div class="images_content_wrap text_center">
                 <div class="images_wrap text_center">
                     <div class="images_wrap_inside">
@@ -126,7 +127,7 @@
         </section>
 
         <section class="video_wrap" id="video_wrap">
-            <video src="images/shilajit_video.mp4" id="movie" playsinline></video>
+            <video src="images/shilajit_video.mp4" id="movie" playsinline loop></video>
             <img src="images/play.png" alt="play button" class="play" id="playMovie">
         </section>
 
@@ -249,7 +250,7 @@
             <div class="testimonials_wrap">
                 <div class="testimonial_padding">
                     <div class="testimonials">
-                        <img src="images/testimonial1.jpg" alt="testimonial image">
+                        <img src="images/manan.jpg" alt="testimonial image">
                         <div class="testimonial_content">
                             <div class="stars">
                                 <span class="fa fa-star checked"></span>
@@ -268,7 +269,7 @@
                 </div>
                 <div class="testimonial_padding">
                     <div class="testimonials">
-                        <img src="images/testimonial1.jpg" alt="testimonial image">
+                        <img src="images/keshav.jpg" alt="testimonial image">
                         <div class="testimonial_content">
                             <div class="stars">
                                 <span class="fa fa-star checked"></span>
@@ -286,7 +287,7 @@
                 </div>
                 <div class="testimonial_padding">
                     <div class="testimonials">
-                        <img src="images/testimonial1.jpg" alt="testimonial image">
+                        <img src="images/atharv.jpg" alt="testimonial image">
                         <div class="testimonial_content">
                             <div class="stars">
                                 <span class="fa fa-star checked"></span>
@@ -304,7 +305,7 @@
                 </div>
                 <div class="testimonial_padding">
                     <div class="testimonials">
-                        <img src="images/testimonial2.jpg" alt="testimonial image">
+                        <img src="images/kumar.jpg" alt="testimonial image">
                         <div class="testimonial_content">
                             <div class="stars">
                                 <span class="fa fa-star checked"></span>
@@ -322,7 +323,7 @@
                 </div>
                 <div class="testimonial_padding">
                     <div class="testimonials">
-                        <img src="images/testimonial1.jpg" alt="testimonial image">
+                        <img src="images/lakshya.jpg" alt="testimonial image">
                         <div class="testimonial_content">
                             <div class="stars">
                                 <span class="fa fa-star checked"></span>
@@ -354,6 +355,7 @@
         });
 
         $('#video_wrap').click(function () {
+            $("#playMovie").hide();
             $('#movie').trigger('play');
         });
 
@@ -604,10 +606,12 @@
             {
                 x: "-50%",
                 y: "100%",
+                opacity: 0,
             },
             {
                 x: "-50%",
                 y: "50%",
+                opacity: 1,
             },
             "test"
         ).to(".banner_wrap .scene", 1,
@@ -639,7 +643,7 @@
 
         // create a scene
         new ScrollMagic.Scene({
-            duration: winW * 2, // the scene should last for a scroll distance of 100px
+            duration: winH * 2, // the scene should last for a scroll distance of 100px
             offset: 0, // start this scene after scrolling for 0px
         })
             .setTween(bannerTween)
@@ -674,7 +678,7 @@
         // create a scene
         new ScrollMagic.Scene({
             triggerElement: ".about_shilajit",
-            duration: winW,
+            duration: winH * 0.3,
             offset: winH * 0.5, // start this scene after scrolling for 0px
         })
             .setTween(shilajitTween)
