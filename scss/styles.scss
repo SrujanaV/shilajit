@@ -44,6 +44,52 @@ body {
   font-family: BigCaslon_Italic;
 }
 
+.cmn_btn {
+  text-decoration: none;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: solid 2px #f7e57e;
+  background-color: black;
+  font-size: 20px;
+  font-family: Circular-Medium;
+  padding: 10px 20px;
+  color: white;
+  transition: ease all 300ms;
+  line-height: 1;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  @media only screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+  .button_text {
+    margin-right: 20px;
+    line-height: 1;
+  }
+  .first_button {
+    transition: ease all 300ms;
+  }
+  .second_button {
+    position: absolute;
+    top: 10px;
+    transition: ease all 300ms;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  &:hover {
+    background-color: #f7e57e;
+    color: black;
+    .arrow {
+      filter: brightness(0);
+    }
+  }
+}
+
 #index_page {
   position: relative;
   overflow: hidden;
@@ -69,7 +115,7 @@ body {
       h2 {
         font-size: 60px;
         padding-bottom: 30px;
-        font-family: Circular-Medium;
+        font-family: Circular-Book;
         @media only screen and (max-width: 767px) {
           font-size: 40px;
         }
@@ -162,7 +208,7 @@ body {
     .images_content_wrap {
       &.gold {
         .images_wrap {
-          img {
+          .images_wrap_inside {
             &:first-child {
               opacity: 0;
             }
@@ -184,9 +230,12 @@ body {
       }
       .images_wrap {
         position: relative;
-        img {
-          margin: 0 auto;
+        .images_wrap_inside {
+          .img_container {
+            margin-top: 50px;
+          }
           &:last-child {
+            width: 100%;
             left: 50%;
             transform: translateX(100%);
             transition: ease all 500ms;
@@ -194,44 +243,8 @@ body {
             top: 0;
             opacity: 0;
           }
-        }
-      }
-      .shilajit_button {
-        position: relative;
-        margin-top: 20px;
-        border-radius: 25px;
-        border: solid 2px #f7e57e;
-        background-color: black;
-        font-size: 20px;
-        padding: 10px 20px;
-        color: white;
-        transition: ease all 300ms;
-        cursor: pointer;
-        overflow: hidden;
-        @media only screen and (max-width: 767px) {
-          font-size: 16px;
-        }
-        .button_text {
-          margin-right: 20px;
-        }
-        .first_button {
-          transition: ease all 300ms;
-        }
-        .second_button {
-          position: absolute;
-          top: 10px;
-          transition: ease all 300ms;
-          display: flex;
-          justify-content: space-between;
-          width: 80%;
-          transform: translateX(100%);
-          opacity: 0;
-        }
-        &:hover {
-          background-color: #f7e57e;
-          color: black;
-          .arrow {
-            filter: brightness(0);
+          img {
+            margin: 0 auto;
           }
         }
       }
@@ -253,6 +266,7 @@ body {
       justify-content: space-between;
       @media only screen and (max-width: 767px) {
         flex-direction: column;
+        width: 60%;
       }
       .feature_card {
         display: flex;
@@ -321,6 +335,7 @@ body {
       margin: 0 auto;
       font-size: 25px;
       font-family: Circular-Medium;
+      margin-bottom: 30px;
       @media only screen and (max-width: 767px) {
         font-size: 18px;
         width: 90%;
@@ -332,7 +347,6 @@ body {
     overflow: hidden;
     position: relative;
     min-height: 100vh;
-    max-height: 100vh;
     h2 {
       text-align: center;
       padding: 30px 0;
@@ -471,7 +485,6 @@ body {
     }
     .vitality_wrap {
       min-height: 100vh;
-      max-height: 100vh;
       position: absolute;
       width: 100%;
       top: 0;
@@ -486,6 +499,12 @@ body {
       @media only screen and (max-width: 767px) {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
+      }
+      h2 {
+        padding-top: 50px;
+        @media only screen and (max-width: 767px) {
+          padding: 10px 0;
+        }
       }
       .well_being_wrap {
         display: flex;
@@ -551,6 +570,9 @@ body {
         font-size: 18px;
         width: 90%;
       }
+      .test_about {
+        margin-bottom: 30px;
+      }
     }
     .land {
       position: absolute;
@@ -581,7 +603,6 @@ body {
             object-fit: cover;
           }
           .testimonial_content {
-            background-color: #d9d9d9;
             padding: 30px;
             position: absolute;
             top: 0;
@@ -590,10 +611,7 @@ body {
             left: 0;
             transition: ease all 300ms;
             padding-right: 50px;
-            @media only screen and (max-width: 767px) {
-              background-color: transparent;
-              color: white;
-            }
+            color: white;
             .checked {
               color: orange;
             }
@@ -611,10 +629,6 @@ body {
                 font-size: 12px;
               }
             }
-            // &:hover {
-            //   background-color: transparent;
-            //   color: white;
-            // }
           }
         }
       }
