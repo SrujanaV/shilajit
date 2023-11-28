@@ -98,6 +98,10 @@ body {
       transform: translateX(-50%);
       z-index: 10;
       color: white; }
+      @media only screen and (max-width: 767px) {
+        #index_page .banner_wrap .brown_circle {
+          width: 200vw;
+          height: 200vw; } }
       #index_page .banner_wrap .brown_circle h2 {
         font-size: 60px;
         padding-bottom: 30px;
@@ -125,7 +129,6 @@ body {
       width: 70%; }
       @media only screen and (max-width: 767px) {
         #index_page .banner_wrap .banner_img .banner_text2 {
-          font-size: 20px;
           width: 100%; } }
     #index_page .banner_wrap .banner_img .banner_text,
     #index_page .banner_wrap .banner_img .banner_text2 {

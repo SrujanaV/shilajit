@@ -115,6 +115,10 @@ body {
       transform: translateX(-50%);
       z-index: 10;
       color: white;
+      @media only screen and (max-width: 767px) {
+        width: 200vw;
+        height: 200vw;
+      }
       h2 {
         font-size: 60px;
         padding-bottom: 30px;
@@ -147,7 +151,6 @@ body {
         line-height: 1.2;
         width: 70%;
         @media only screen and (max-width: 767px) {
-          font-size: 20px;
           width: 100%;
         }
       }

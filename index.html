@@ -22,64 +22,53 @@
             <div class="banner_img">
                 <picture>
                     <source media="(min-width:767px)" srcset="images/banner_img.jpg">
-                    <img src="images/banner_img.jpg" alt="Banner Image" class="img-responsive banner_img_img">
+                    <img src="images/banner_img_mobile.png" alt="Banner Image" class="img-responsive banner_img_img">
                 </picture>
                 <picture>
                     <source media="(min-width:767px)" srcset="images/banner_img2.png">
-                    <img src="images/banner_img2.png" alt="Banner 2 Image"
+                    <img src="images/banner_img2_mobile.png" alt="Banner 2 Image"
                         class="img-responsive banner_img2 hidden_elem">
                 </picture>
                 <picture>
                     <source media="(min-width:767px)" srcset="images/birds.png">
-                    <img src="images/birds.png" alt="Birds" class="img-responsive birds hidden_elem">
+                    <img src="images/birds_mobile.png" alt="Birds" class="img-responsive birds hidden_elem">
                 </picture>
                 <picture>
                     <source media="(min-width:767px)" srcset="images/clouds.png">
-                    <img src="images/clouds.png" alt="Clouds" class="img-responsive clouds hidden_elem">
+                    <img src="images/clouds_mobile.png" alt="Clouds" class="img-responsive clouds hidden_elem">
                 </picture>
                 <picture>
                     <source media="(min-width:767px)" srcset="images/mountain2.png">
-                    <img src="images/mountain2.png" alt="mountains" class="img-responsive mountains hidden_elem">
+                    <img src="images/mountain2_mobile.png" alt="mountains" class="img-responsive mountains hidden_elem">
                 </picture>
-                <!-- <img src="images/banner_img.jpg" alt="Banner Image" class="img-responsive banner_img_img"> -->
-                <!-- <img src="images/banner_img2.png" alt="Banner 2 Image" class="img-responsive banner_img2 hidden_elem"> -->
-                <!-- <img src="images/birds.png" alt="Birds" class="img-responsive birds hidden_elem"> -->
-                <!-- <img src="images/clouds.png" alt="clouds" class="img-responsive clouds hidden_elem"> -->
-                <!-- <img src="images/mountain2.png" alt="mountains" class="img-responsive mountains hidden_elem"> -->
                 <h2 class="banner_text">Sourced from <span>18,000 Feet</span> of the <span>Annapurna Range</span> of the
                     Himalayas
                 </h2>
                 <picture>
                     <source media="(min-width:767px)" srcset="images/white_clouds2.png">
-                    <img src="images/white_clouds2.png" alt="white clouds"
+                    <img src="images/white_clouds2_mobile.png" alt="white clouds"
                         class="img-responsive white_clouds hidden_elem">
                 </picture>
-                <!-- <img src="images/white_clouds2.png" alt="white clouds" class="img-responsive white_clouds hidden_elem"> -->
                 <h2 class="banner_text2">Shilajit, the <span>'destroyer of weakness'</span>, boosts energy, endurance
                     and vitality with<span>Himalayan power.</span></h2>
                 <picture>
                     <source media="(min-width:767px)" srcset="images/black_mountain_left.png">
-                    <img src="images/black_mountain_left.png" alt="black left mountain"
+                    <img src="images/black_mountain_left_mobile.png" alt="black left mountain"
                         class="img-responsive black_left">
                 </picture>
                 <picture>
                     <source media="(min-width:767px)" srcset="images/black_mountain_right.png">
-                    <img src="images/black_mountain_right.png" alt="black right mountain"
+                    <img src="images/black_mountain_right_mobile.png" alt="black right mountain"
                         class="img-responsive black_right">
                 </picture>
                 <picture>
                     <source media="(min-width:767px)" srcset="images/scene.png">
-                    <img src="images/scene.png" alt="scene" class="img-responsive scene hidden_elem">
+                    <img src="images/scene_mobile.png" alt="scene" class="img-responsive scene hidden_elem">
                 </picture>
                 <picture>
                     <source media="(min-width:767px)" srcset="images/shilajit_box.png">
                     <img src="images/shilajit_box.png" alt="Shilajit Box" class="img-responsive shilajit_box">
                 </picture>
-                <!-- <img src="images/black_mountain_left.png" alt="black left mountain" class="img-responsive black_left"> -->
-                <!-- <img src="images/black_mountain_right.png" alt="black right mountain"
-                    class="img-responsive black_right"> -->
-                <!-- <img src="images/scene.png" alt="scene" class="img-responsive scene hidden_elem"> -->
-                <!-- <img src="images/shilajit_box.png" alt="Shilajit Box" class="img-responsive shilajit_box"> -->
             </div>
         </section>
 
@@ -678,7 +667,7 @@
         // create a scene
         new ScrollMagic.Scene({
             triggerElement: ".about_shilajit",
-            duration: winH * 0.5,
+            duration: winW,
             offset: winH * 0.5, // start this scene after scrolling for 0px
         })
             .setTween(shilajitTween)
