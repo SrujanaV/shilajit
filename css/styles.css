@@ -307,7 +307,8 @@ body {
         #index_page .about_shilajit h2 {
           width: 80%;
           margin: 0 auto;
-          font-size: 28px; } }
+          font-size: 28px;
+          font-family: Circular-Book; } }
       #index_page .about_shilajit h2 span {
         font-family: BigCaslon_Italic; }
     #index_page .about_shilajit .shilajits_impact_wrap {
