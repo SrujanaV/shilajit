@@ -382,10 +382,12 @@ body {
       #index_page .about_shilajit .pure_himalayan .himalayan_wrap {
         display: flex;
         align-items: center;
-        justify-content: space-between; }
+        justify-content: space-between;
+        margin-top: 70px; }
         @media only screen and (max-width: 767px) {
           #index_page .about_shilajit .pure_himalayan .himalayan_wrap {
-            flex-direction: column; } }
+            flex-direction: column;
+            margin-top: 0; } }
         #index_page .about_shilajit .pure_himalayan .himalayan_wrap .himalayan_image {
           width: 40%;
           margin: 0 auto;
@@ -394,9 +396,12 @@ body {
           @media only screen and (max-width: 767px) {
             #index_page .about_shilajit .pure_himalayan .himalayan_wrap .himalayan_image {
               padding: 0;
-              width: 90%;
+              width: 80%;
               border-right: 0;
               border-bottom: solid 2px black; } }
+          @media only screen and (max-width: 767px) {
+            #index_page .about_shilajit .pure_himalayan .himalayan_wrap .himalayan_image:first-child {
+              padding-bottom: 20px; } }
           #index_page .about_shilajit .pure_himalayan .himalayan_wrap .himalayan_image:last-child {
             border-right: 0;
             border-bottom: 0; }
